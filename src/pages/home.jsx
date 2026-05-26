@@ -1,15 +1,13 @@
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/productcard";
 import { getProducts } from "../data/products";
 
 export default function Home() {
   const products = getProducts();
-  
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pb-16">
-      
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-rose-50 via-white to-[#ffebf1] border-b border-rose-100/50 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-center">
-        {/* Subtle decorative background blur elements */}
+      <div className="relative overflow-hidden bg-linear-to-br from-rose-50 via-white to-[#ffebf1] border-b border-rose-100/50 py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-center">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none">
           <div className="absolute top-10 left-10 w-72 h-72 bg-rose-200/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-5 right-10 w-72 h-72 bg-pink-200/20 rounded-full blur-3xl"></div>
@@ -20,7 +18,8 @@ export default function Home() {
             Welcome to <span className="text-[#FF6B9D]">ShopHub</span>
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
-            Discover amazing products at great prices, tailored exactly to your lifestyle.
+            Discover amazing products at great prices, tailored exactly to your
+            lifestyle.
           </p>
         </div>
       </div>
@@ -36,7 +35,7 @@ export default function Home() {
               Showing our top-rated collections available today
             </p>
           </div>
-          
+
           {/* Optional decorative indicator matching the look */}
           <div className="text-xs font-semibold text-[#FF6B9D] bg-rose-50 px-3 py-1.5 rounded-full">
             ✨ Featured
